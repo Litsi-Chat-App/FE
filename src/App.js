@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <Route exact path="/" component={HomeScreen} />
+      <Route exact path="/!roomname" component={ChatRoom} />
     </div>
   );
 }
