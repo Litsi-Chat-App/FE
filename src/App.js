@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom';
 
 // Components
 import HomeScreen from './Components/HomeScreen';
+import ChatRoom from './Components/ChatRoom';
 
 function App() {
   return (
