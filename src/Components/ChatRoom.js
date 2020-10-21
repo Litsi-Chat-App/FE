@@ -3,6 +3,10 @@ import io from 'socket.io-client';
 
 function ChatRoom(props) {
   const socket = io('http://localhost:4000', {
+    reconnection: true,
+    reconnectionAttempts: 10,
+    reconnectionDelayMax: 5000,
+    reconnectionDelay: 1000,
     query: {
       room: props.match.params.roomname,
       hasFoundCall: false,
